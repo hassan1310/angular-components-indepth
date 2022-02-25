@@ -1,0 +1,6 @@
+<app-blog-post-tile *ngFor = "let post of blogPost[currentPageNumber] " [post]="post"></app-blog-post-tile>
+
+<app-paginator [numberOfPages]="this.blogPost.length" (pageNumberClick)="updatePage($event)"></app-paginator>
+
+
+<a href="#" class="btn-read-more" >Test Encapsulation</a>
